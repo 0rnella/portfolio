@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://friggito.github.io/portfolio",
+  "homepage": "https://friggit.dev/",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
