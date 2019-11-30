@@ -1,11 +1,11 @@
 import React from "react";
 import Projects from "./Projects.js";
-import Intro from "./Intro.js";
+import IntroHero from "./Intro_hero.js";
 
 function Home(props) {
   return (
     <div>
-      <Intro />
+      <IntroHero />
       <Projects {...props} />
     </div>
   );

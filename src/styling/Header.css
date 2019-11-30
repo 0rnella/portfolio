@@ -29,3 +29,7 @@
   white-space: nowrap;
   margin: 0px;
 }
+
+#header-padding {
+  min-height: 110px;
+}

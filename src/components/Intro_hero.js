@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styling/Intro.css";
+import "../styling/Hero.css";
 
-function Intro() {
+function IntroHero() {
   return (
     <div id="Intro-row">
       <p>Hi! I'm a full-stack developer.</p>
@@ -11,4 +11,4 @@ function Intro() {
   );
 }
 
-export default Intro;
+export default IntroHero;
