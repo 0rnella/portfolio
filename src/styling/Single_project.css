@@ -1,9 +1,7 @@
 .single-proj-container {
-    /* color: #ffffff;
-    background: #945afd; */
-    padding: 3vh 3vw 3vh 3vw;
-    display: flex;
-    align-items: center;
+    padding       : 3vh 3vw 3vh 3vw;
+    display       : flex;
+    align-items   : center;
     flex-direction: column;
 }
 
@@ -12,11 +10,11 @@
 }
 
 .single-proj-img {
-    width: 15vw;
-    object-fit: cover;
+    width        : 15vw;
+    object-fit   : cover;
     border-radius: 50%;
-    box-shadow: 3px 3px 8px #945afd;
-    margin-top: 1.95rem;
+    box-shadow   : 3px 3px 8px #945afd;
+    margin-top   : 1.95rem;
 }
 
 .material-icons {
@@ -29,10 +27,11 @@
 
 .arrow-container {
     display: flex;
-    width: 100%;
+    width  : 100%;
 }
-.nav-arrow{
-    height: 100%;
-    width: 84px;
+
+.nav-arrow {
+    height   : 100%;
+    width    : 84px;
     flex-grow: 1;
 }

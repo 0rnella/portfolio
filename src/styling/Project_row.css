@@ -1,12 +1,12 @@
 .project-image {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
+    width        : 250px;
+    height       : 250px;
+    object-fit   : cover;
     border-radius: 50%;
-    box-shadow: 3px 3px 8px;
+    box-shadow   : 3px 3px 8px;
 }
 
 .project-card {
-    height: 500px;
+    height : 500px;
     padding: 1rem !important;
 }

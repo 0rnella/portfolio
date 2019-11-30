@@ -6,21 +6,22 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
 #content {
-  max-width: 1400px;
+  max-width    : 1400px;
   align-content: center;
-  display: inline-block;
+  display      : inline-block;
 }
 
 .cta {
-  color: #000000;
-  font-family: "Josefin Sans";
-  text-transform: uppercase;
+  color          : #000000;
+  font-family    : "Josefin Sans";
+  text-transform : uppercase;
   text-decoration: underline;
-  display: block;
+  display        : block;
 }

@@ -1,23 +1,23 @@
 .App-header {
-  padding: 10px 3vw 3px 3vw;
+  padding         : 10px 3vw 3px 3vw;
   background-color: #000000;
-  color: #ffffff;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  overflow: hidden;
-  height: 110px;
+  color           : #ffffff;
+  position        : fixed;
+  top             : 0;
+  width           : 100vw;
+  overflow        : hidden;
+  height          : 110px;
 }
 
 #Navbar {
   background-color: transparent;
-  height: auto;
+  height          : auto;
 }
 
-#Navbar>a{
-  margin: 2vw;
-  font-size: 1.2em;
-  font-family: "Josefin Sans";
+#Navbar>a {
+  margin        : 2vw;
+  font-size     : 1.2em;
+  font-family   : "Josefin Sans";
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -25,9 +25,9 @@
 #text-logo {
   font-family: "Playfair Display", 'Times New Roman', Times, serif;
   font-weight: 700;
-  color: white;
+  color      : white;
   white-space: nowrap;
-  margin: 0px;
+  margin     : 0px;
 }
 
 #header-padding {
