@@ -1,10 +1,10 @@
 .App-footer {
     background: #945afd;
-    color: #ffffff;
-    padding: 2rem;
+    color     : #ffffff;
+    padding   : 2rem;
 }
 
 .App-footer a {
-    color: #ffffff;
+    color          : #ffffff;
     text-decoration: underline solid #ffffff;
 }
