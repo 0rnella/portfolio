@@ -7,11 +7,11 @@ function Footer() {
       <p>
         Github:{" "}
         <a
-          href="http://github.com/friggito"
+          href="http://github.com/0rnella"
           target="_blank"
           rel="noopener noreferrer"
         >
-          @friggito
+          @0rnella
         </a>
         {"    "}|{"    "}Linkedin:{" "}
         <a
@@ -23,11 +23,11 @@ function Footer() {
         </a>
         {"    "}|{"    "}Twitter:{" "}
         <a
-          href="http://twitter.com/friggito"
+          href="http://twitter.com/zerornella"
           target="_blank"
           rel="noopener noreferrer"
         >
-          @friggito
+          @zerornella
         </a>
       </p>
       <p>
