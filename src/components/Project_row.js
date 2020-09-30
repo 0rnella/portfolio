@@ -1,7 +1,6 @@
 import React from "react";
 import "../styling/Project_row.css";
 import { Link } from "react-router-dom";
-import { HeaderPadding } from "./Header";
 
 function ProjectRow(props) {
   const { logo, project } = props;

@@ -1,10 +1,8 @@
 import React, { Fragment } from "react";
-import { HeaderPadding } from "./Header";
 
 function About(props) {
   return (
     <Fragment>
-      <HeaderPadding/>
       <div className="row">
         <div className="col s12 m4 l4">
           <img src={props.images.aboutMe} alt="Ornella Friggit" style={{ width: "94%", padding: "3%" }} />

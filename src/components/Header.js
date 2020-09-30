@@ -15,10 +15,4 @@ function Header() {
   );
 }
 
-export function HeaderPadding(){
-  return (
-    <div id="header-padding"></div>
-  )
-}
-
 export default Header;
