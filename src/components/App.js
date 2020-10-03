@@ -1,8 +1,17 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Router, Route, Switch } from "react-router-dom";
 import { StaticRoutes, BlogPost, Footer, Header, ProjectPage, } from "./";
 import "../styling/index.scss";
 import { makeClient } from '../helpers';
+
+//  Reset scroll when changing pages
+import { createBrowserHistory } from "history";
+
+export const history = createBrowserHistory();
+
+history.listen((location, action) => {
+  window.scrollTo(0, 0);
+});
 
 
 const client = makeClient();
@@ -36,7 +45,7 @@ const App = () => {
   }, [error]);
 
   return (
-    <Router>
+    <Router history={history}>
       <div className="App">
         <Header />
         <main id="content">
