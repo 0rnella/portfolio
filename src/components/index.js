@@ -18,17 +18,17 @@ import ProjectRow from './Project_row';
 import Projects from './Projects';
 
 export {
-    AboutPage,
-    BlogPost,
-    Home,
-    ProjectPage,
-    ResumePage,
-    Blog,
-    BlogPreview,
-    Header,
-    Footer,
-    IntroHero,
-    ProjectRow,
-    Projects,
-    StaticRoutes
-}
+  AboutPage,
+  BlogPost,
+  Home,
+  ProjectPage,
+  ResumePage,
+  Blog,
+  BlogPreview,
+  Header,
+  Footer,
+  IntroHero,
+  ProjectRow,
+  Projects,
+  StaticRoutes
+};

@@ -1,5 +1,5 @@
 import React from "react";
-import {Projects, IntroHero} from '../';
+import { Projects, IntroHero } from '../';
 
 function Home(props) {
   return (

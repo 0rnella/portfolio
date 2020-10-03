@@ -13,7 +13,7 @@ function BlogPreview(props) {
       <Link to={slug}>
         <h4>{title}</h4>
       </Link>
-    <p>{description}</p>
+      <p>{description}</p>
       <Link to={slug} className="cta">Read blog</Link>
     </div>
   );
