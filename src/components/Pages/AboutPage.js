@@ -1,11 +1,12 @@
 import React, { Fragment } from "react";
+import images from '../../assets/images/index'
 
 function About(props) {
   return (
     <Fragment>
       <div className="row">
         <div className="col s12 m4 l4">
-          <img src={props.images.aboutMe} alt="Ornella Friggit" style={{ width: "94%", padding: "3%" }} />
+          <img src={images.aboutMe} alt="Ornella Friggit" style={{ width: "94%", padding: "3%" }} />
         </div>
         <div className="col s12 m8 l8 left-align">
           <h3>About me</h3>

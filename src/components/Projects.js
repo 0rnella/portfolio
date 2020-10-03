@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import ProjectRow from "./Project_row";
+import {ProjectRow} from "./";
 
 function Projects(props) {
   return (

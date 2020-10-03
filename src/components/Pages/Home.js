@@ -1,6 +1,5 @@
 import React from "react";
-import Projects from "./Projects.js";
-import IntroHero from "./Intro_hero.js";
+import {Projects, IntroHero} from '../';
 
 function Home(props) {
   return (
