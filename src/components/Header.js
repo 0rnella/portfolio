@@ -9,6 +9,7 @@ function Header() {
       <nav id="Navbar">
         <Link to="/portfolio">My work</Link>
         <Link to="/about">About me</Link>
+        <Link to="/blog">Blog</Link>
         <Link to="/resume">Résumé</Link>
       </nav>
     </header>
