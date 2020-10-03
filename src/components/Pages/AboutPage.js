@@ -8,7 +8,7 @@ function About(props) {
         <img src={images.aboutMe} alt="Ornella Friggit" style={{ width: "94%", padding: "3%" }} />
       </div>
       <div className="description">
-        <h3>About me</h3>
+        <h1>About me</h1>
         <p>
             I am a full-stack software engineer with experience as a graphic and
             web designer. I've always loved data.
