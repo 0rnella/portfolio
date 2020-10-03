@@ -1,8 +1,15 @@
+@import './App.scss';
+@import './About.scss';
+@import './Blog.scss';
+@import './Footer.scss';
+@import './Header.scss';
+@import './Hero.scss';
+@import './ProjectRow.scss';
+@import './ProjectPage.scss';
+
 body {
   margin: 0;
-  font-family: "Raleway", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  letter-spacing         : .05em;
+  font-family: "Droid Sans", "Helvetica Neue",sans-serif;
   -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -17,7 +24,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Playfair Display", "Times New Roman", serif;
+  font-family: "Playfair Display", Palatino, Garamond, serif;
 }
 
 button {
@@ -25,7 +32,7 @@ button {
   margin          : 10px;
   background-color: #000000;
   color           : #ffffff !important;
-  font-family     : "Josefin Sans";
+  font-family   : "Josefin Sans", Avenir, Helvetica, sans-serif;
   text-transform  : uppercase;
   border          : none;
   box-shadow      : 3px 3px 8px #945afd;

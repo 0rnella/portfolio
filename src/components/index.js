@@ -14,7 +14,7 @@ import BlogPreview from './BlogPreview';
 import Footer from './Footer';
 import Header from './Header';
 import IntroHero from './Intro_hero';
-import ProjectRow from './Project_row';
+import ProjectRow from './ProjectRow';
 import Projects from './Projects';
 
 export {

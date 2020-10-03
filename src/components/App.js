@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { StaticRoutes, BlogPost, Footer, Header, ProjectPage, } from "./";
-import "../styling/App.css";
+import "../styling/index.scss";
 import { makeClient } from '../helpers';
 
 
@@ -40,7 +40,7 @@ const App = () => {
     <Router>
       <div className="App">
         <Header />
-        <div id="content">
+        <main id="content">
           <Switch>
             {projects.map((project, idx) => (
               <Route
@@ -60,7 +60,7 @@ const App = () => {
             ))}
             <StaticRoutes projects={projects} blogPosts={blogPosts} />
           </Switch>
-        </div>
+        </main>
         <Footer />
       </div>
     </Router>

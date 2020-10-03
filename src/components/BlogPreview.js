@@ -1,20 +1,24 @@
 import React from "react";
+import day from 'dayjs';
 import { Link } from "react-router-dom";
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 function BlogPreview(props) {
-  const { slug, title, description, heroImage } = props.blogPost.fields;
+  const { slug, title, description, heroImage, publishDate } = props.blogPost.fields;
+  const date = day(publishDate).format('DD MMMM YYYY');
 
   return (
-    <div className="blog-card col s12 l3 m6">
-      <Link to={slug}>
-        <img className="blog-image" src={heroImage.fields.file.url} alt={heroImage.fields.file.title} />
+    <div className="blog-card">
+      <Link className="blog-image" to={slug}>
+        <img src={heroImage.fields.file.url} alt={heroImage.fields.file.title} />
       </Link>
-      <Link to={slug}>
-        <h4>{title}</h4>
-      </Link>
-      <p>{description}</p>
-      <Link to={slug} className="cta">Read blog</Link>
+      <div class="description">
+        <Link to={slug}>
+          <h3>{title}</h3>
+        </Link>
+        <time>{date}</time>
+        <p>{description}</p>
+        <Link to={slug} className="cta">Read blog</Link>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,31 @@
+.blog-posts-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+.blog-card {
+  border-radius: 5px;
+  width: 30%;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 5px 0px rgba(199,187,199,0.5);
+  transition: box-shadow ease-in-out 200ms;
+
+  &:hover {
+      box-shadow: 0px 5px 10px 0px rgba(199,187,199,1);
+  }
+
+  .description {
+    padding: 0 20px 20px 20px;
+  }
+}
+.blog-image {
+  height: 20vw;
+  display: block;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .blog-card {
+    width: 100%;
+  }
+}

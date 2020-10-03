@@ -1,16 +1,14 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { ProjectRow } from "./";
 
 function Projects(props) {
   return (
-    <Fragment>
-      <div className="row">
-        <h3>Recent projects</h3>
-        {props.projects.map(project => (
-          <ProjectRow key={project.fields.title} project={project} />
-        ))}
-      </div>
-    </Fragment>
+    <section className="row">
+      <h2>Recent projects</h2>
+      {props.projects.map(project => (
+        <ProjectRow key={project.fields.title} project={project} />
+      ))}
+    </section>
   );
 }
 

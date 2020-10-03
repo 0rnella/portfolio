@@ -35,3 +35,12 @@
     width    : 84px;
     flex-grow: 1;
 }
+
+.technology{
+    display: flex;
+    justify-content: center;
+    .wrench-icon {
+        width: 20px;
+        margin-right: 10px;
+    }
+}

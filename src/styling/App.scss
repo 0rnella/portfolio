@@ -6,6 +6,11 @@ img {
   width: 100%;
 }
 
+section {
+  margin: 20px 0;
+  padding: 20px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -19,13 +24,14 @@ img {
 #content {
   margin-top   :110px;
   max-width    : 1400px;
+  width: 100%;
   align-content: center;
   display      : inline-block;
 }
 
 .cta {
   color          : #000000;
-  font-family    : "Josefin Sans";
+  font-family   : "Josefin Sans", Avenir, Helvetica, sans-serif;
   text-transform : uppercase;
   text-decoration: underline;
   display        : block;

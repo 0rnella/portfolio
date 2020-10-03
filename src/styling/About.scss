@@ -1,0 +1,11 @@
+#about {
+  display: flex;
+
+  .profile-image {
+    width: 40%;
+  }
+  .description {
+    margin-left: 20px;
+    text-align: left;
+  }
+}

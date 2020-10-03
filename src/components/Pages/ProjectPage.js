@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styling/Single_project.css";
+import { wrench } from "../../assets/images";
 import { Link } from "react-router-dom";
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
@@ -20,8 +20,8 @@ function SingleProject(props) {
         
         <h4>Technologies used:</h4>
         {technologies.map(tech => (
-          <p key={tech}>
-            <i className="material-icons">build</i>
+          <p class='technology' key={tech}>
+            <img class='wrench-icon' alt="wrench icon" src="/wrench.svg" />
             {tech}
           </p>
         ))}
@@ -37,21 +37,17 @@ function SingleProject(props) {
       </div>
       <div className="arrow-container">
         <div className="nav-arrow">
-          {prev ? (
-            <Link to={`/${prev.fields.slug}`}>
-              <i className="material-icons large">navigate_before</i>
+          {prev && (
+            <Link className='nav-arrow' to={`/${prev.fields.slug}`}>
+              Previous
             </Link>
-          ) : (
-            <i className="material-icons large transparent">navigate_before</i>
           )}
         </div>
         <div className="nav-arrow">
-          {next ? (
-            <Link to={`/${next.fields.slug}`}>
-              <i className="material-icons large">navigate_next</i>
+          {next && (
+            <Link className='nav-arrow' to={`/${next.fields.slug}`}>
+              Next
             </Link>
-          ) : (
-            <i className="material-icons large transparent">navigate_next</i>
           )}
         </div>
       </div>
