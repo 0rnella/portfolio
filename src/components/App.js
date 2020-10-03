@@ -35,7 +35,6 @@ const App = () => {
     fetchBlogPosts(client);
   }, [error]);
 
-  console.log(blogPosts);
   return (
     <Router>
       <div className="App">

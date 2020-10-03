@@ -1,5 +1,4 @@
 import React from "react";
-import { wrench } from "../../assets/images";
 import { Link } from "react-router-dom";
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 

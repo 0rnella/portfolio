@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import images from '../../assets/images/index';
 
 function About(props) {

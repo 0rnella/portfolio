@@ -3,7 +3,7 @@ import day from 'dayjs';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 const BlogPost = (props) => {
-  const { title, publishDate, body, heroImage, tags } = props.blogPost.fields;
+  const { title, publishDate, body, heroImage } = props.blogPost.fields;
   const content = documentToReactComponents(body);
   const date = day(publishDate).format('DD MMMM YYYY');
   return (<article>
