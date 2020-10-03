@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../styling/App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { projectsList, images, resumeUrl } from "../assets/index";
+import { resumeUrl } from "../assets/index";
+import { makeClient } from '../helpers';
 
 // Components
 import About from "./About.js";
@@ -12,49 +13,66 @@ import Projects from "./Projects";
 import SingleProject from "./Single_project";
 import Resume from "./Resume";
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { projectsList, images, resumeUrl };
-  }
-  render() {
+const client = makeClient();
+
+const App = () => {
+  // constructor(props) {
+  //   super(props);
+  //   this.state = { projectsList, images, resumeUrl };
+  // }
+  const [projects, setProjects] = useState([]);
+  const [error, setError] = useState({});
+
+  useEffect(() => {
+      const fetchProjects = async (client) => {
+        try {
+          const entries = await client.getEntries({ content_type: 'project' })
+          setProjects(entries.items);
+        } catch(err) {
+          setError(err);
+        }
+      }
+
+      fetchProjects(client);
+  }, [error]);
+
+  console.log(projects);
     return (
       <Router>
         <div className="App">
           <Header />
           <div id="content">
             <Switch>
-              {this.state.projectsList.map((project, idx) => (
+              {projects.map((project, idx) => (
                 <Route
-                  key={project.title}
+                  key={project.fields.title}
                   exact
-                  path={`/${project.link}`}
-                  render={props => <SingleProject idx={idx} {...this.state} />}
+                  path={`/${project.fields.slug}`}
+                  render={props => <SingleProject idx={idx} project={project} projects={projects} />}
                 />
               ))}
               <Route
                 exact
                 path="/portfolio"
-                render={props => <Projects {...this.state} />}
+                render={props => <Projects projects={projects} />}
               />
                             <Route
                 exact
                 path="/resume"
-                render={props => <Resume resumeUrl={this.state.resumeUrl} />}
+                render={props => <Resume resumeUrl={resumeUrl} />}
               />
               <Route
                 exact
                 path="/about"
-                render={props => <About {...this.state} />}
+                render={props => <About />}
               />
-              <Route render={props => <Home {...this.state} />} />
+              <Route render={props => <Home projects={projects} />} />
             </Switch>
           </div>
           <Footer />
         </div>
       </Router>
     );
-  }
 }
 
 export default App;
