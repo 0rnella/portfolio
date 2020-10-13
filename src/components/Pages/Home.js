@@ -1,11 +1,14 @@
-import React from "react";
-import { Projects, IntroHero } from '../';
+import React, { Suspense } from "react";
+import { IntroHero } from '../';
+const Projects = React.lazy(() => import('../Projects'));
 
 function Home(props) {
   return (
     <div>
       <IntroHero />
-      <Projects {...props} />
+      <Suspense fallback="<section>Recent projects...</section>">
+        <Projects {...props} />
+      </Suspense>
     </div>
   );
 }

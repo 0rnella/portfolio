@@ -13,7 +13,7 @@ import Blog from './Blog';
 import BlogPreview from './BlogPreview';
 import Footer from './Footer';
 import Header from './Header';
-import IntroHero from './Intro_hero';
+import IntroHero from './IntroHero';
 import ProjectRow from './ProjectRow';
 import Projects from './Projects';
 
