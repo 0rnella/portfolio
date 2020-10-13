@@ -1,3 +1,4 @@
+@import './variables.scss';
 @import './App.scss';
 @import './About.scss';
 @import './Blog.scss';
@@ -35,9 +36,9 @@ button {
   font-family   : "Josefin Sans", Avenir, Helvetica, sans-serif;
   text-transform  : uppercase;
   border          : none;
-  box-shadow      : 3px 3px 8px #945afd;
+  box-shadow      : 3px 3px 8px $accent-color;
 }
 
 a {
-  color: #945afd
+  color: $accent-color;
 }

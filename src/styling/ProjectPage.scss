@@ -13,12 +13,12 @@
     width        : 15vw;
     object-fit   : cover;
     border-radius: 50%;
-    box-shadow   : 3px 3px 8px #945afd;
+    box-shadow   : 3px 3px 8px $accent-color;
     margin-top   : 1.95rem;
 }
 
 .material-icons {
-    color: #945afd;
+    color: $accent-color;
 }
 
 .material-icons.transparent {

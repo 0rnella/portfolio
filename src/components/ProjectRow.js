@@ -9,7 +9,7 @@ function ProjectRow(props) {
   return (
     <div className="project-card">
       <Link className="project-image" to={slug}>
-        <img src={mainImage.fields.file.url} alt={mainImage.fields.file.title} />
+        <img src={mainImage.fields.file.url} alt={`${title} logo`} />
       </Link>
       <div className='description'>
         <Link to={slug}>
