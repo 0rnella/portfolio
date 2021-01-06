@@ -11,7 +11,7 @@ function BlogPreview(props) {
       <Link className="blog-image" to={slug}>
         <img src={heroImage.fields.file.url} alt={heroImage.fields.file.title} />
       </Link>
-      <div class="description">
+      <div className="description">
         <Link to={slug}>
           <h3>{title}</h3>
         </Link>

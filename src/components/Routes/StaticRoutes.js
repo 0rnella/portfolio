@@ -27,7 +27,7 @@ const StaticRoutes = (props) => {
         path="/about"
         component={AboutPage}
       />
-      <Route exact path='/' render={() => <Home projects={projects} />} />
+      <Route exact path='/' render={() => <Home projects={projects} blogPosts={blogPosts} />} />
     </Fragment>
   );
 };

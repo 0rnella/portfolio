@@ -22,8 +22,8 @@ function SingleProject(props) {
         
           <h4>Technologies used:</h4>
           {technologies.map(tech => (
-            <p class='technology' key={tech}>
-              <img class='wrench-icon' alt="wrench icon" src="/wrench.svg" />
+            <p className='technology' key={tech}>
+              <img className='wrench-icon' alt="wrench icon" src="/wrench.svg" />
               {tech}
             </p>
           ))}

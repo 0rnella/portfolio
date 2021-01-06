@@ -21,9 +21,8 @@ section {
   }
 }
 
-#content {
-  max-width    : 1800px;
-  width: 100%;
+.row {
+  max-width: 100%;
   align-content: center;
   display      : inline-block;
   min-height: 70vh;
