@@ -1,12 +1,11 @@
 import React from "react";
 import PageWithHeader from './PageWithHeader';
+import { Projects } from '..';
 
 export default function Resume (props) {
   return (
     <PageWithHeader>
-      <div id="Intro-row">
-        <a href={props.resumeUrl}><button>Download my résumé</button></a>
-      </div>
+      <Projects projects={props.projects}/>
     </PageWithHeader>
   );
 }

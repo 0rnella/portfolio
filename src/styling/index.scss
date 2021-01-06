@@ -5,6 +5,7 @@
 @import './Footer.scss';
 @import './Header.scss';
 @import './Hero.scss';
+@import './Navbar.scss';
 @import './ProjectRow.scss';
 @import './ProjectPage.scss';
 
@@ -14,6 +15,7 @@ body {
   -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fff8eb;
+  font-size: 1.2em;
 }
 
 code {
@@ -26,7 +28,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Hammersmith One', sans-serif;
+  font-family: 'Francois One', sans-serif;
   color: $dark;
 }
 

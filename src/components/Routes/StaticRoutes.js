@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Route } from 'react-router-dom';
 import { resumeUrl } from "../../assets/index";
-import { Blog, Projects, ResumePage, AboutPage, Home } from '../';
+import { BlogOverviewPage, ProjectOverviewPage, ResumePage, AboutPage, Home } from '../';
 
 const StaticRoutes = (props) => {
   const { blogPosts, projects } = props;
@@ -10,12 +10,12 @@ const StaticRoutes = (props) => {
       <Route
         exact
         path="/blog"
-        render={() => <Blog blogPosts={blogPosts} />}
+        render={() => <BlogOverviewPage blogPosts={blogPosts} />}
       />
       <Route
         exact
         path="/portfolio"
-        render={() => <Projects projects={projects} />}
+        render={() => <ProjectOverviewPage projects={projects} />}
       />
       <Route
         exact
