@@ -10,9 +10,10 @@
 
 body {
   margin: 0;
-  font-family: "Droid Sans", "Helvetica Neue",sans-serif;
+  font-family: 'Lato', sans-serif;
   -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fff8eb;
 }
 
 code {
@@ -25,7 +26,8 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Playfair Display", Palatino, Garamond, serif;
+  font-family: 'Hammersmith One', sans-serif;
+  color: $dark;
 }
 
 button {
@@ -36,7 +38,7 @@ button {
   font-family   : "Josefin Sans", Avenir, Helvetica, sans-serif;
   text-transform  : uppercase;
   border          : none;
-  box-shadow      : 3px 3px 8px $accent-color;
+  @include shadow;
 }
 
 a {

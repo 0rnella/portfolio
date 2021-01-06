@@ -1,15 +1,15 @@
-import React, { Suspense } from "react";
+import React, { Suspense, Fragment } from "react";
 import { IntroHero } from '../';
 const Projects = React.lazy(() => import('../Projects'));
 
 function Home(props) {
   return (
-    <div>
+    <Fragment>
       <IntroHero />
       <Suspense fallback="<section>Recent projects...</section>">
         <Projects {...props} />
       </Suspense>
-    </div>
+    </Fragment>
   );
 }
 

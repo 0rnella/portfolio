@@ -6,12 +6,15 @@ const BlogPost = (props) => {
   const { title, publishDate, body, heroImage } = props.blogPost.fields;
   const content = documentToReactComponents(body);
   const date = day(publishDate).format('DD MMMM YYYY');
-  return (<article>
-    <img className="blog-hero-image" src={heroImage.fields.file.url} alt={heroImage.fields.file.title} />
-    <h1>{title}</h1>
-    <time>{date}</time>
-    {content}
-  </article>);
+
+  return (
+    <article>
+      <img className="blog-hero-image" src={heroImage.fields.file.url} alt={heroImage.fields.file.title} />
+      <h1>{title}</h1>
+      <time>{date}</time>
+      {content}
+    </article>
+  );
 };
 
 export default BlogPost;

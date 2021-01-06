@@ -34,21 +34,9 @@ function SingleProject(props) {
         )}
         {htmlDesc}
       </div>
-      <div className="arrow-container">
-        <div className="nav-arrow">
-          {prev && (
-            <Link className='nav-arrow' to={`/${prev.fields.slug}`}>
-              Previous
-            </Link>
-          )}
-        </div>
-        <div className="nav-arrow">
-          {next && (
-            <Link className='nav-arrow' to={`/${next.fields.slug}`}>
-              Next
-            </Link>
-          )}
-        </div>
+      <div className="nav-arrows">
+        {prev && <Link to={`/${prev.fields.slug}`}>{"< Previous"}</Link>}
+        {next && <Link to={`/${next.fields.slug}`}>{"Next >"}</Link>}
       </div>
     </div>
   );

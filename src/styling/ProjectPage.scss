@@ -13,30 +13,17 @@
     width        : 15vw;
     object-fit   : cover;
     border-radius: 50%;
-    box-shadow   : 3px 3px 8px $accent-color;
+    @include shadow;
     margin-top   : 1.95rem;
 }
 
-.material-icons {
-    color: $accent-color;
+.nav-arrows {
+    a {
+    padding: 15px;
+    }
 }
 
-.material-icons.transparent {
-    color: transparent;
-}
-
-.arrow-container {
-    display: flex;
-    width  : 100%;
-}
-
-.nav-arrow {
-    height   : 100%;
-    width    : 84px;
-    flex-grow: 1;
-}
-
-.technology{
+.technology {
     display: flex;
     justify-content: center;
     .wrench-icon {

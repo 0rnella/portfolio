@@ -1,1 +1,14 @@
-$accent-color: #7d48e1;
+$accent-color: #9c6615ff;
+$accent-50: rgba(156, 102, 21, 0.5);
+$medium: #d2b074;
+$dark: #413620;
+
+
+@mixin shadow {
+  box-shadow: 2px 4px 16px 0px $accent-50;
+  transition: box-shadow ease-in-out 200ms;
+
+  &:hover {
+      box-shadow: 2px 4px 8px 0px $accent-50;
+  }
+}
