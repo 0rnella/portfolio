@@ -19,7 +19,9 @@
 }
 
 @media only screen and (max-width: 768px) {
-
+  .blog-posts-list {
+    flex-direction: column;
+  }
   .blog-card {
     width: 100%;
   }

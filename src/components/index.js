@@ -14,6 +14,7 @@ import BlogPreview from './BlogPreview';
 import Footer from './Footer';
 import Header from './Header';
 import IntroHero from './IntroHero';
+import Navbar from './Navbar';
 import ProjectRow from './ProjectRow';
 import Projects from './Projects';
 
@@ -28,6 +29,7 @@ export {
   Header,
   Footer,
   IntroHero,
+  Navbar,
   ProjectRow,
   Projects,
   StaticRoutes
