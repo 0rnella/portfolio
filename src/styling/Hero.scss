@@ -1,16 +1,17 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6em;
+  min-height: 60vh;
+  justify-content: center;
+  padding: 20px;
+}
+
 #hero {
   width: 100vw;
   background-size: cover;
   text-align: center;
   
-  .intro {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.6em;
-    min-height: 80vh;
-    justify-content: center;
-    padding: 20px;
-  }
 
   #Navbar {
     text-align: left;

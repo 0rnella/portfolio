@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div id="hero">
       <Navbar/>
-      <div class="intro">
+      <div className="intro">
         <p>Hi! I'm Ornella Friggit, and I work as a full-stack developer.</p>
         <p>
           Please feel free to view
