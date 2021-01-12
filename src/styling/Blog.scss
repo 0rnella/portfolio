@@ -18,6 +18,18 @@
   overflow: hidden;
 }
 
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-post-content {
+  text-align: left;
+  padding: 20px;
+  max-width: 800px;
+}
+
 @media only screen and (max-width: 768px) {
   .blog-posts-list {
     flex-direction: column;

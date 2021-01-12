@@ -12,9 +12,11 @@ const BlogPost = (props) => {
     <PageWithHeader>
       <article>
         <img className="blog-hero-image" src={heroImage.fields.file.url} alt={heroImage.fields.file.title} />
-        <h1>{title}</h1>
-        <time>{date}</time>
-        {content}
+        <div className="blog-post-content">
+          <h1>{title}</h1>
+          <time>{date}</time>
+          {content}
+        </div>
       </article>
     </PageWithHeader>
   );
